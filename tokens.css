@@ -1,12 +1,13 @@
+/* SIGNAL tokens — public marketing */
 :root {
-  --canvas: #FAFAFC;
+  --canvas: #F4F6FA;
   --surface: #FFFFFF;
-  --surface-subtle: #F6F8FB;
-  --surface-selected: #EEF4FF;
+  --surface-subtle: #EEF2F7;
+  --surface-selected: #E8F0FF;
   --border: #E2E8F0;
   --border-strong: #CBD5E1;
   --ink: #0B1220;
-  --muted: #667085;
+  --muted: #5B667A;
   --tertiary: #98A2B3;
   --blue: #0052FF;
   --blue-hover: #0047E0;
@@ -16,5 +17,6 @@
   --warning: #F79009;
   --action: #101828;
   --radius-control: 10px;
-  --radius-panel: 16px;
+  --radius-panel: 18px;
+  --signal-mark: url("/assets/logo.svg");
 }
