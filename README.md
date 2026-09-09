@@ -1,9 +1,8 @@
-# SIGNAL marketing site + brand kit
+# SIGNAL
 
-Season 0 marketing surface for SIGNAL on Base.
+Season 0 marketing site and brand kit.
 
 - `/` product site
 - `/brand` brand kit
 
-Canonical product design source of truth remains `DESIGN.md` in `yufr007/signal-app`.
-The 3D glass mark must not be redrawn. Web derivatives live in `/assets`.
+The SIGNAL mark is the 3D glass horn. Use it as supplied.
