@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIGNAL Brand Kit</title>
+  <meta name="theme-color" content="#FAFAFC" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/tokens.css" />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Geist,ui-sans-serif,system-ui,sans-serif;background:var(--canvas);color:var(--ink);-webkit-font-smoothing:antialiased}
+    a{color:inherit}.mono{font-family:"JetBrains Mono",ui-monospace,monospace}
+    .wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}
+    header.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--canvas) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .nav-inner{width:min(1080px,calc(100% - 32px));margin:0 auto;height:64px;display:flex;align-items:center;justify-content:space-between}
+    .lockup{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:.04em;font-size:15px}
+    .lockup img{width:32px;height:32px}
+    .btn{display:inline-flex;align-items:center;height:40px;padding:0 14px;border-radius:10px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--border-strong);background:#fff}
+    h1{font-size:clamp(32px,5vw,52px);letter-spacing:-.035em;line-height:1.05;margin:12px 0}
+    .lede{color:var(--muted);max-width:56ch}
+    section{padding:64px 0;border-top:1px solid var(--border)}
+    h2{font-size:22px;letter-spacing:-.02em;margin-bottom:8px}
+    .sec-lead{color:var(--muted);font-size:14px;margin-bottom:22px;max-width:60ch}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .tile{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff}
+    .tile .stage{height:160px;display:grid;place-items:center}
+    .tile .stage img{width:88px;height:88px}
+    .tile figcaption{padding:12px 14px;font-size:12px;color:var(--muted);border-top:1px solid var(--border)}
+    .swatch{border:1px solid var(--border);border-radius:14px;overflow:hidden;background:#fff}
+    .swatch .chip{height:72px}
+    .swatch .meta{padding:12px 14px}
+    .swatch b{display:block;font-size:13px}
+    .swatch code{font-size:12px;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;font-size:14px;background:#fff;border:1px solid var(--border);border-radius:14px;overflow:hidden}
+    th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--border);vertical-align:top}
+    th{font-size:12px;color:var(--muted);font-weight:600;background:var(--surface-subtle)}
+    .do{color:var(--positive);font-weight:600}.dont{color:var(--negative);font-weight:600}
+    footer{padding:28px 0 40px;color:var(--muted);font-size:13px}
+    @media(max-width:800px){.grid-4,.grid-3,.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="nav"><div class="nav-inner"><a class="lockup" href="/"><img src="/assets/logo-64.png" alt="" /> SIGNAL</a><a class="btn" href="/">Marketing site</a></div></header>
+  <div class="wrap" style="padding:56px 0 24px">
+    <div style="font-size:12px;font-weight:600;color:var(--blue);letter-spacing:.08em;text-transform:uppercase">Brand kit · Season 0</div>
+    <h1>The mark is not optional.</h1>
+    <p class="lede">Canonical source is <span class="mono">DESIGN.md</span> in <span class="mono">yufr007/signal-app</span>. Production uses the founder-supplied 3D glass signal. Do not redraw, recolor, simplify, or replace it.</p>
+  </div>
+  <section><div class="wrap">
+    <h2>Mark</h2>
+    <p class="sec-lead">Header lockup is the 3D icon plus SIGNAL in Geist. Do not use the legacy SVG approximation as the production mark. Do not use the icon as a giant decorative background.</p>
+    <div class="grid-3">
+      <figure class="tile"><div class="stage" style="background:#0B1220"><img src="/assets/logo-64.png" alt="On ink" /></div><figcaption>On near-black</figcaption></figure>
+      <figure class="tile"><div class="stage"><img src="/assets/logo-64.png" alt="On white" /></div><figcaption>On white</figcaption></figure>
+      <figure class="tile"><div class="stage" style="background:#0052FF"><img src="/assets/logo-64.png" alt="On blue" /></div><figcaption>On SIGNAL blue</figcaption></figure>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Color</h2>
+    <p class="sec-lead">Light-first. Blue is action, not decoration. Green/red are financial only. Cyan is a restrained accent from the glass mark.</p>
+    <div class="grid-4">
+      <div class="swatch"><div class="chip" style="background:#0052FF"></div><div class="meta"><b>SIGNAL Blue</b><code class="mono">#0052FF</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#22B8F0"></div><div class="meta"><b>Cyan</b><code class="mono">#22B8F0</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#0B1220"></div><div class="meta"><b>Ink</b><code class="mono">#0B1220</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#FAFAFC;border-bottom:1px solid var(--border)"></div><div class="meta"><b>Canvas</b><code class="mono">#FAFAFC</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#667085"></div><div class="meta"><b>Muted</b><code class="mono">#667085</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#12B76A"></div><div class="meta"><b>Positive</b><code class="mono">#12B76A</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#F04438"></div><div class="meta"><b>Negative</b><code class="mono">#F04438</code></div></div>
+      <div class="swatch"><div class="chip" style="background:#101828"></div><div class="meta"><b>Dark action</b><code class="mono">#101828</code></div></div>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Type</h2>
+    <p class="sec-lead">Geist for UI and prices with tabular numerals. JetBrains Mono only for addresses, hashes, and machine identifiers.</p>
+    <div class="grid-2">
+      <div class="tile" style="padding:22px"><div style="font-size:40px;font-weight:700;letter-spacing:-.03em">SIGNAL</div><p style="color:var(--muted);margin-top:8px">Geist 700 · wordmark</p></div>
+      <div class="tile" style="padding:22px"><div class="mono" style="font-size:18px">(8453, contract)</div><p style="color:var(--muted);margin-top:8px">Identity is chain + address, never a ticker.</p></div>
+    </div>
+  </div></section>
+  <section><div class="wrap">
+    <h2>Voice</h2>
+    <table><thead><tr><th style="width:90px">Rule</th><th>Line</th></tr></thead><tbody>
+      <tr><td class="do">Do</td><td>SIGNAL is a Base-native social trading terminal and open economic world for humans and autonomous agents.</td></tr>
+      <tr><td class="do">Do</td><td>Humans connect an existing Base wallet. Agents connect through MCP. Only registered agent wallets create launch markets.</td></tr>
+      <tr><td class="do">Do</td><td>Season 0: 5 USDC membership · 0.50 USDC launch · 2.50 USDC Pass · 5,000 USDC graduation · 1% native fee.</td></tr>
+      <tr><td class="dont">Don’t</td><td>Claim a public trading URL, live mainnet markets, or operational copy until receipts exist.</td></tr>
+      <tr><td class="dont">Don’t</td><td>Use $NOISE, Genesis Points, TGE, or exact 5 ETH graduation as current copy.</td></tr>
+      <tr><td class="dont">Don’t</td><td>Show a human create-token CTA or generic AI-robot decoration.</td></tr>
+    </tbody></table>
+  </div></section>
+  <footer><div class="wrap">SIGNAL · Season 0 · Source of truth remains DESIGN.md in the product repo.</div></footer>
+</body></html>
